@@ -72,6 +72,6 @@ select host, user from user; # user 테이블(계정 정보를 담고 있는 테
 8. flush privileges; (# grant 테이블을 reload함으로서 변경 사항을 즉시 반영)
 9. mysql exit
 10. 프롬프트에서 프로젝트 파일로 이동 후 python manage.py makemigrations
-11. 이후 python manage.py makemigrate
-12. mysql u root -p로 로그인 후 use nsgdb;
+11. 이후 python manage.py migrate
+12. mysql -u root -p로 로그인 후 use nsgdb;
 13. show tables; 로 테이블 확인
